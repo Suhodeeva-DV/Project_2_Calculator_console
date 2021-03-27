@@ -34,7 +34,6 @@ namespace Calculator_console
                     break;
                 case '/':
                     Console.WriteLine(num1 / (double)num2);
-                    //Exeption(num1, num2);
                     break;
                 default :
                     Console.WriteLine("Вы нажали неизвестный оператор");
