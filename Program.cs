@@ -15,6 +15,9 @@ namespace Calculator_console
             Console.WriteLine("Введите второе число:");
             int num2 = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Ваш пример:");
+            Console.WriteLine($"{num1} {operation} {num2}");
+            Console.WriteLine("Ответ:");
             Calculator(num1, operation, num2);
             Exeption(num1, num2);
         }
