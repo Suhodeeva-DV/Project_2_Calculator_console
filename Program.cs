@@ -9,7 +9,12 @@ namespace Calculator_console
         static void Main(string[] args)
         {
             Console.WriteLine("Введите первое число:");
-            int num1 = int.Parse(Console.ReadLine());
+            //int.TryParse(Console.ReadLine(), out int num1);
+            if (!int.TryParse(Console.ReadLine(), out int num1))
+            {
+                Console.WriteLine("Ошибка! Вы ввели некорректное число!");
+                Environment.Exit(0);
+            }
             Console.WriteLine("Введите операцию:");
             char operation = Convert.ToChar(Console.ReadLine());
             Console.WriteLine("Введите второе число:");
